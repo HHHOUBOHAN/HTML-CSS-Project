@@ -1,0 +1,242 @@
+/*.mi-nav {*/
+/*    position: fixed;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    height: 65px;*/
+/*    backdrop-filter: blur(10px);*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    background-color: rgba(0, 0, 0, 0.05);*/
+/*    padding: 0 15px;*/
+/*    .mi-nav-list{*/
+/*        width: 100%;*/
+/*        display: flex;*/
+/*        align-items: center;*/
+/*        color: rgba(0, 0, 0, 0.8);*/
+/*        height: 100%;*/
+/*        max-width: 1226px;*/
+/*        justify-content: space-between;*/
+/*        .nav-menu {*/
+/*            a {*/
+/*                font-size: 14px;*/
+/*                font-weight: 500;*/
+/*                text-decoration: none;*/
+/*                color: rgba(159, 68, 68, 0.8);*/
+/*            }*/
+/*        }*/
+/*        .mi-logo {*/
+/*            width: 34px;*/
+/*            height: 34px;*/
+/*            background-image: url("/images/logo-mi2.png");*/
+/*            background-repeat: no-repeat;*/
+/*            background-position: center center;*/
+/*            !* 关键：让图片适配容器尺寸（不会变形/显示不全） *!*/
+/*            background-size: contain;*/
+/*            cursor: pointer;*/
+/*        }*/
+/*    >svg: last-child{ display:none; }*/
+/*    }*/
+/*}*/
+
+/*.mi-nav{*/
+/*    position: fixed;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    height: 65px;*/
+/*    padding: 0 15px;*/
+/*    !*栏的位置*!*/
+/*    background-color: #000;*/
+
+
+
+/*    .mi-nav-list{*/
+/*        display: flex;*/
+/*        width: 1440px;*/
+/*        justify-content: space-between;*/
+/*        .mi-logo{*/
+/*            width: 60px;*/
+/*            height: 65px;*/
+/*            display: flex;*/
+/*            align-items: center;*/
+/*        }*/
+/*        .mi-logo .mi-logo-t img{*/
+/*            !*    上面为什么不直接写 .mi-logo-t是因为如果别的地方有同样 .mi-logo-t就有可能同时用一个  但是如果把上一级写上就不会了*!*/
+/*            !*    定义可点击链接位置*!*/
+/*            width: 34px;*/
+/*            height: 34px;*/
+/*        }*/
+/*        .mi-logo .mi-logo-t{*/
+/*            width: 34px;*/
+/*            height: 34px;*/
+/*        }*/
+/*        !*如果直接把上述两个类嵌套进.mi-logo是不行的 但是把前面的.mi-logo去掉再嵌套就可以*!*/
+
+
+
+
+/*        .nav-menu{*/
+
+/*        }*/
+/*        .login-area{}*/
+/*    }*/
+
+/*}*/
+.mi-nav {
+    position: fixed;
+    /*这个属性让 .mi-nav 固定在浏览器窗口的某个位置，而不是随着页面滚动。*/
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 65px;
+    padding: 0 15px;
+    background-color: #000;
+
+    .mi-nav-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1440px;
+        margin: 0 auto;
+        width: 100%;
+
+        .mi-logo {
+            display: flex;
+            align-items: center;
+            width: 60px;
+            height: 65px;
+
+            .mi-logo-t {
+                width: 34px;
+                height: 34px;
+
+                img {
+                    width: 34px;
+                    height: 34px;
+                }
+            }
+        }
+
+        .nav-menu {
+            flex-grow: 1;
+
+            ul {
+                list-style: none;
+                display: flex;
+                justify-content: space-around;
+                padding: 0;
+                margin: 0;
+
+                li {
+                    display: inline;
+
+                    a {
+                        color: white;
+                        text-decoration: none;
+                        padding: 10px 15px;
+
+                        &:hover {.mi-nav {
+                            position: fixed;
+                            /*这个属性让 .mi-nav 固定在浏览器窗口的某个位置，而不是随着页面滚动。*/
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            height: 65px;
+                            padding: 0 15px;
+                            background-color: #000;
+
+                            .mi-nav-list {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                max-width: 1440px;
+                                margin: 0 auto;
+                                width: 100%;
+
+                                .mi-logo {
+                                    display: flex;
+                                    align-items: center;
+                                    width: 60px;
+                                    height: 65px;
+
+                                    .mi-logo-t {
+                                        width: 34px;
+                                        height: 34px;
+
+                                        img {
+                                            width: 34px;
+                                            height: 34px;
+                                        }
+                                    }
+                                }
+
+                                .nav-menu {
+                                    flex-grow: 1;
+
+                                    ul {
+                                        list-style: none;
+                                        display: flex;
+                                        justify-content: space-around;
+                                        padding: 0;
+                                        margin: 0;
+
+                                        li {
+                                            display: inline;
+
+                                            a {
+                                                color: white;
+                                                text-decoration: none;
+                                                padding: 10px 15px;
+
+                                                &:hover {
+                                                    background-color: #333;
+                                                    border-radius: 5px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .login-area {
+                                    a {
+                                        color: white;
+                                        text-decoration: none;
+                                        padding: 10px 15px;
+                                        background-color: #f15b5b;
+                                        border-radius: 5px;
+
+                                        &:hover {
+                                            background-color: #d04d4d;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+
+                            background-color: #333;
+                            border-radius: 5px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .login-area {
+            a {
+                color: white;
+                text-decoration: none;
+                padding: 10px 15px;
+                background-color: #f15b5b;
+                border-radius: 5px;
+
+                &:hover {
+                    background-color: #d04d4d;
+                }
+            }
+        }
+    }
+}
+
