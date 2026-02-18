@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="CSS/1.css">
     <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/js/all.min.js"></script>
     <style>
@@ -59,5 +60,38 @@
 
     </div>
 </nav>
+<div class="content">
+<!--    顶部轮播-->
+    <div class="section section-banner">
+
+        <div class="swiper banner-swiper">
+<!--            划动轨道-->
+            <div class="swiper-wrapper">
+<!--                一张轮播图-->
+                <div class="swiper-slide">
+                    <img src="images/1.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/2.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/3.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/4.png" alt="">
+                </div>
+            </div>
+<!--            左箭头-->
+            <div class="swiper-button-prev"></div>
+<!--            右箭头-->
+            <div class="swiper-button-next"></div>
+<!--            进度条分页-->
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js.js"></script>
 </body>
 </html>
