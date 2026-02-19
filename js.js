@@ -23,3 +23,40 @@ document.addEventListener('DOMContentLoaded', function() {
         grabCursor: true,        // 鼠标抓手样式
     });
 });
+document.addEventListener("DOMContentLoaded", function () {
+
+    const navbar = document.querySelector(".mi-nav");
+
+    let lastScrollTop = 0;
+    let lastTime = Date.now();
+
+    window.addEventListener("scroll", function () {
+
+        const currentScrollTop = window.scrollY;
+        const currentTime = Date.now();
+
+        const speed = Math.abs(currentScrollTop - lastScrollTop) / (currentTime - lastTime); // 滚动速度
+
+        lastScrollTop = currentScrollTop;
+        lastTime = currentTime;
+
+        // 🔥 如果速度很慢 → 立即执行
+        if (speed < 0.03) {
+            updateNavbar(currentScrollTop);
+        } else {
+            // 如果速度快 → 等停止再执行
+            clearTimeout(window.scrollTimer);
+            window.scrollTimer = setTimeout(() => updateNavbar(window.scrollY), 120);
+        }
+
+    });
+
+    function updateNavbar(scrollTop) {
+        if (scrollTop > 10) {
+            navbar.classList.add("scrolled");
+        } else {
+            navbar.classList.remove("scrolled");
+        }
+    }
+
+});
