@@ -1,6 +1,6 @@
 
 document.addEventListener('DOMContentLoaded', function() {
-    const bannerSwiper = new Swiper('.banner-swiper', {
+    const bannerSwiper = new Swiper('.swiper', {
         loop: true,
         autoplay: {  delay: 3000, // 3秒切换
         disableOnInteraction: false, // 手动操作后不停止
