@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
         lastTime = currentTime;
 
         // 🔥 如果速度很慢 → 立即执行
-        if (speed < 0.03) {
+        if (speed < 0.05) {
             updateNavbar(currentScrollTop);
         } else {
             // 如果速度快 → 等停止再执行

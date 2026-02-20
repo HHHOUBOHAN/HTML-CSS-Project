@@ -230,6 +230,7 @@ body {
                 .footer-info-item1{
                     display: block;
                     text-align: center;
+                    border-left: 1px solid  rgb(224,224,224); /* 添加白色分隔线 */
                     .phone{
                         color: #ff6900;
                         font-size: 22px;
@@ -294,13 +295,88 @@ body {
         }
 
     }
-    .footer-bottom{}
+    .footer-bottom{
+        flex-grow: 1;
+        background: #fafafa;
+        margin: 30px 0;
+        display: block;
+        .wrapper{
+            width: 1226px;
+            height: 175px;
+            display: flex;
+            margin: 0 233px;
+            /*margin:auto;*/
+            .logo{
+                width: 80px;
+                height: 190px;
+                img{
+                    background-size: 56px 56px; /* 设置背景图片的尺寸 */
+                    width: 56px; /* 设置宽度 */
+                    height: 56px; /* 设置高度 */
+                    font-size: 12px; /* 设置字体大小 */
+                    line-height: 14px; /* 设置行高 */
+                    margin: 0  20px 0  0; /* 设置外边距，顶部为0，右边为20px，底部为0，左边为0 */
+                    text-align: left; /* 设置文本对齐方式为左对齐 */
+                }
+            }
+            .footer-nav{
+                flex-grow: 1;
+                display: block;
+                .info-text{
+                    .sites{
+                        a{
+                            color: #757575;
+                            text-decoration: none;
+                            font-size: 12px;
+                            line-height: 18px;
+                        }
+                        .sep{
+                            color: #b0b0b0;
+                            font-size: 12px;
+                            line-height: 18px;
+                        }
+                    }
+                    .footer-info{
+                        span{
+                            color: #b0b0b0;
+                            font-size: 12px;
+                            line-height: 18px;
+                        }
+
+                    }
+                }
+                .info-links{
+                    flex-grow: 1;
+                    margin-top: 4px;
+                    margin-bottom: 15px;
+                    display: flex;
+                    a{
+                        width: 90px;
+                        height: 30px;
+                        img{
+                            width: 90px;
+                            height: 30px;
+                        }
+                    }
+
+                }
+            }
+        }
+        .slogan{
+            flex-grow: 1;
+            font-size: 20px;
+            line-height: 14px;
+            text-align: center;
+            margin-top: 30px;
+            color: #b0b0b0;
+        }
+    }
     ul {
         font-size: 12px;
         list-style-type: none; /* 去掉默认的点符号 */
         li {
-            font-size: 14px;
             color: #757575;
+            line-height: 14px;
             margin-top: 10px;
         }
         li:hover {
@@ -308,6 +384,11 @@ body {
             cursor: pointer;
         }
     }
+}
+.exergue{
+    width: 100%;
+    height: 35px;
+    background: #fafafa;
 }
 /* 滚动条样式 */
 /*滑动条宽度*/
