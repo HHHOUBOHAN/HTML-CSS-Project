@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         lazy: {
             loadPrevNext: true,  // 预加载前后各一张图片
-            loadPrevNextAmount: 3, // 增加预加载的图片数量，确保快速切换时图片已经加载
+            loadPrevNextAmount: 3, //  预加载的图片数量
         },
         navigation: {
             nextEl: '.swiper-button-next',
@@ -40,11 +40,11 @@ document.addEventListener("DOMContentLoaded", function () {
         lastScrollTop = currentScrollTop;
         lastTime = currentTime;
 
-        // 🔥 如果速度很慢 → 立即执行
+        //滑动速度判断导航栏显示
         if (speed < 0.05) {
             updateNavbar(currentScrollTop);
         } else {
-            // 如果速度快 → 等停止再执行
+
             clearTimeout(window.scrollTimer);
             window.scrollTimer = setTimeout(() => updateNavbar(window.scrollY), 120);
         }

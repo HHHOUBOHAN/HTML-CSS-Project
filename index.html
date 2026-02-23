@@ -3,50 +3,801 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="CSS/1.css">
-</head>
-<body>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="CSS/1.css">
     <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/js/all.min.js"></script>
+    <style>
+    </style>
 </head>
 <body>
 <nav class="mi-nav">
     <div class="mi-nav-list">
-        <!-- 1. Logo组（单独放） -->
-        <div class="mi-logo"></div>
-
-        <!-- 2. 导航菜单组（用div包裹，统一控制） -->
-        <div class="nav-menu">
-            <a href="#">小米官网</a>
-            <a href="#">小米商城</a>
-            <a href="#">小米澎湃OS</a>
-            <a href="#">小米汽车</a>
-            <a href="#">小米影像</a>
-            <a href="#">云服务</a>
-            <a href="#">LOT</a>
-            <a href="#">有品</a>
-            <a href="#">小爱开放平台</a>
-            <a href="#">Location</a>
-            <a href="#">技术支持</a>
+        <div class="mi-logo">
+            <a href="https://www.mi.com" class="mi-logo-t">
+                <img src="images/logo-mi2.png" alt="小米官网">
+            </a>
+            <!--            如果src图片不显示 就会显示alt-->
         </div>
+        <nav class="nav-menu">
+            <div class="nav-item">
+                <a href="https://www.mi.com">小米官网</a>
+            </div>
+            <div class="nav-item">
+                <a href="https://www.mi.com/store">小米商城</a>
+            </div>
+            <div class="nav-item">
+                <a href="https://www.mi.com/mi-os">小米澎湃OS</a>
+            </div>
+            <div class="nav-item">
+                <a href="https://www.mi.com/car">小米汽车</a>
+            </div>
+            <div class="nav-item">
+                <a href="https://www.mi.com/cloud">云服务</a>
+            </div>
+            <div class="nav-item">
+                <a href="https://www.mi.com/iot">IoT</a>
+            </div>
+            <div class="nav-item">
+                <a href="https://www.mi.com/products">有品</a>
+            </div>
+            <div class="nav-item">
+                <a href="https://www.mi.com/open">小米开放平台</a>
+            </div>
+            <div class="nav-item">
+                <a href="https://www.mi.com/location">Location</a>
+            </div>
+        </nav>
+        <nav class="login-area">
+            <div class="menu-item">
+                <!-- 登录 -->
+                <a href="#" class="hover">登录</a>
+                <!-- 分隔线 -->
+                <span>|</span>
+                <!-- 注册 -->
+                <a href="#" class="hover">注册</a>
+            </div>
+        </nav>
 
-        <!-- 3. 右侧图标组（单独放） -->
-        <div class="nav-icons">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa-solid fa-bag-shopping"></i>
-            <i class="fa-solid fa-grip-lines"></i>
-        </div>
     </div>
 </nav>
-<!-- 加个占位符，避免页面内容被固定导航挡住 -->
-<div style="height: 100px;"></div>
+<div class="content">
+    <!--    顶部轮播-->
+    <div class="section section-banner">
+
+        <div class="swiper banner-swiper">
+            <!--            划动轨道-->
+            <div class="swiper-wrapper">
+                <!--                一张轮播图-->
+                <div class="swiper-slide">
+                    <img src="images/1.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/2.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/3.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/4.png" alt="">
+                </div>
+            </div>
+            <!--            左箭头-->
+            <div class="swiper-button-prev"></div>
+            <!--            右箭头-->
+            <div class="swiper-button-next"></div>
+            <!--            进度条分页-->
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </div>
+    <div class="section section-banner">
+
+        <div class="swiper banner-swiper">
+            <!--            划动轨道-->
+            <div class="swiper-wrapper">
+                <!--                一张轮播图-->
+                <div class="swiper-slide">
+                    <img src="images/5.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/6.png" alt="">
+                </div>
+            </div>
+            <!--            左箭头-->
+            <div class="swiper-button-prev"></div>
+            <!--            右箭头-->
+            <div class="swiper-button-next"></div>
+            <!--            进度条分页-->
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </div>
+    <div class="section section-banner">
+
+        <div class="swiper banner-swiper">
+            <!--            划动轨道-->
+            <div class="swiper-wrapper">
+                <!--                一张轮播图-->
+                <div class="swiper-slide">
+                    <img src="images/7.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/8.png" alt="">
+                </div>
+            </div>
+            <!--            左箭头-->
+            <div class="swiper-button-prev"></div>
+            <!--            右箭头-->
+            <div class="swiper-button-next"></div>
+            <!--            进度条分页-->
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </div>
+    <div class="divider"></div>
+    <div class="photo">
+        <img src="images/01.png" alt="">
+    </div>
+    <div class="section section-banner">
+
+        <div class="swiper banner-swiper">
+            <!--            划动轨道-->
+            <div class="swiper-wrapper">
+                <!--                一张轮播图-->
+                <div class="swiper-slide">
+                    <img src="images/9.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/10.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/11.png" alt="">
+                </div>
+            </div>
+            <!--            左箭头-->
+            <div class="swiper-button-prev"></div>
+            <!--            右箭头-->
+            <div class="swiper-button-next"></div>
+            <!--            进度条分页-->
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </div>
+    <div class="section section-banner">
+
+        <div class="swiper banner-swiper">
+            <!--            划动轨道-->
+            <div class="swiper-wrapper">
+                <!--                一张轮播图-->
+                <div class="swiper-slide">
+                    <img src="images/12.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/13.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/14.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/15.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/16.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/17.png" alt="">
+                </div>
+            </div>
+            <!--            左箭头-->
+            <div class="swiper-button-prev"></div>
+            <!--            右箭头-->
+            <div class="swiper-button-next"></div>
+            <!--            进度条分页-->
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </div>
+    <div class="divider"></div>
+    <div class="photo">
+        <img src="images/02.png" alt="">
+    </div>
+    <div class="divider"></div>
+    <div class="photo">
+        <img src="images/03.png" alt="">
+    </div>
+    <div class="divider"></div>
+    <div class="photo">
+        <img src="images/04.png" alt="">
+    </div>
+</div>
+<div class="footer-container">
+    <!--    上半部分-->
+    <div id="footer" class="footer">
+        <div class="footer-nav">
+            <!-- 底部导航栏内容 -->
+            <div class="link-list"></div>
+            <div class="link-list">
+                <div class="title">选购指南</div>
+                <ul>
+                    <li>手机</li>
+                    <li>电视</li>
+                    <li>笔记本</li>
+                    <li>平板</li>
+                    <li>穿戴</li>
+                    <li>耳机</li>
+                    <li>家电</li>
+                    <li>路由器</li>
+                    <li>音响</li>
+                    <li>配件</li>
+                </ul>
+            </div>
+            <div class="link-list">
+                <div class="title">服务中心</div>
+                <ul>
+                    <li>申请售后</li>
+                    <li>售后政策</li>
+                    <li>服务价格</li>
+                    <li>订单查询</li>
+                    <li>以旧换新</li>
+                    <li>保障服务</li>
+                    <li>防伪查询</li>
+                    <li>F码通道</li>
+                </ul>
+            </div>
+            <div class="link-list">
+                <div class="title">线下门店</div>
+                <ul>
+                    <li>小米之家</li>
+                    <li>服务网点</li>
+                    <li>授权体验店/专区</li>
+                </ul>
+            </div>
+            <div class="link-list">
+                <div class="title">关于小米</div>
+                <ul>
+                    <li>了解小米</li>
+                    <li>加入小米</li>
+                    <li>投资者关系</li>
+                    <li>ESG与可持续发展</li>
+                    <li>廉洁举报</li>
+                </ul>
+            </div>
+            <div class="link-list">
+                <div class="title">关注我们</div>
+                <ul>
+                    <li>新浪微博</li>
+                    <li>官方微信</li>
+                    <li>联系我们</li>
+                    <li>公益基金</li>
+                    <li>小米高校合作</li>
+                </ul>
+            </div>
+            <div class="footer-info">
+                <div class="footer-info-item1">
+                    <p class="phone">950816</p>
+                    <p class="service-time">8:00-18:00（仅收市话费）</p>
+                    <a href="tel:950816" rel="nofollow" class="btn">
+                        <em class="iconfont icon-message"></em>人工客服
+                    </a>
+                </div>
+                <p class="phone1">950816</p>
+                <div class="footer-info-item3">
+                    <p class="working-hours">8:00-18:00（仅收市话费）</p>
+                    <p class="device-info">手机适用于：Xiaomi MIX Fold系列，MIX Flip系列，Xiaomi Ultra系列，Xiaomi Pro Max系列</p>
+                    <p class="device-info">电视适用于：98寸，100寸以上大电视系列</p>
+                </div>
+                <div class="footer-info-item4">
+                    <a href="tel:950816" rel="nofollow" class="btn">
+                        <em class="iconfont icon-message"></em>人工客服
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--    下半部分-->
+    <div class="footer-bottom">
+        <!-- 其他底部内容 -->
+        <div class="wrapper">
+            <div class="logo">
+                <img src="images/logo-mi2.png" alt="点击访问网站">
+            </div>
+            <div class="footer-nav">
+                <div class="info-text">
+                    <p class="sites">
+                        <a href="https://www.mi.com/shop" target="_blank">小米商城</a>
+                        <span class="sep">|</span>
+                        <a href="https://lyperos.com" target="_blank">小米彩蛋</a>
+                        <span class="sep">|</span>
+                        <a href="https://home.mi.com/index.html" target="_blank">米家</a>
+                        <span class="sep">|</span>
+                        <a href="https://www.douban.com" target="_blank">豆瓣</a>
+                        <span class="sep">|</span>
+                        <a href="https://game.xiaomi.com" target="_blank">游戏</a>
+                        <span class="sep">|</span>
+                        <a href="https://www.mi.com/music" target="_blank">音乐</a>
+                        <span class="sep">|</span>
+                        <a href="https://www.mi.com/client" target="_blank">企业服务</a>
+                        <span class="sep">|</span>
+                        <a href="https://www.mi.com/tmall.com" target="_blank">小米天猫商城</a>
+                        <span class="sep">|</span>
+                        <a href="https://privacy.mi.com/all/ch" target="_blank">小米集团隐私政策</a>
+                        <span class="sep">|</span>
+                        <a href="https://dah.onbi.js.fds.api.mi.com/mmall/516fe9e2c001.html" target="_blank">小米公司儿童最严格隐私政策</a>
+                        <span class="sep">|</span>
+                        <a href="https://www.mi.com/support/module?id=ae2" target="_blank">小米商标隐私政策</a>
+                        <span class="sep">|</span>
+                        <a href="https://www.mi.com/aptitude/list?id=2" target="_blank">小米商标用户协议</a>
+                        <span class="sep">|</span>
+                        <a href="https://static.mi.com/feedback" target="_blank">问题反馈</a>
+                        <span class="sep">|</span>
+                        <a href="javascript:void(0);" class="J_siteGlobalRegion">Select Location</a>
+                    </p>
+                    <p class="sites">
+                        <a href="http://www.mi.com/beihu" target="_blank">北京互联网法院法律服务工作站</a>
+                        <span class="sep">|</span>
+                        <a href="http://www.cca.org.cn" target="_blank">中国消费者协会</a>
+                        <span class="sep">|</span>
+                        <a href="http://www.bj315.org" target="_blank">北京市消费者协会</a>
+                    </p>
+                    <p class="footer-info">
+                        <span>© mi.com 京ICP备110507号 京ICP备1004444号 京公网安备11010002001334号 京网文[2026]0015-006号</span><br>
+                        <span>（京）网械平台备字（2018）第00005号 药品医疗器械网络信息服务备案（京）药械信息备字（2024）第00478号 营业执照 医疗器械质量公告</span><br>
+                        <span>增值电信业务经营许可证： 京B2-20180851 网络食品经营备案 京食品网经营备202010048 食品经营许可证 新出京批字第220280号</span><br>
+                        <span>违法和不良信息举报电话：171-5104-4404 知识产权侵权投诉 本网站所列数据，除特殊说明，所有数据均出自我司实验室测试</span><br>
+                    </p>
+                </div>
+                <div class="info-links">
+                    <a href="https://search.sfw.org/cert/1/CX20120926001783000210" target="_blank">
+                        <img src="images/100.png" alt="点击访问网站">
+                    </a>
+                    <a href="https://xt.xinchacha.com/pcinfo?sn=523009063775945522&certType=m" target="_blank">
+                        <img src="images/200.png" alt="点击访问网站">
+                    </a>
+                    <a href="https://www.mi.com/service/buy/commitment" target="_blank">
+                        <img src="images/300.png" alt="用户承诺 购机无忧">
+                    </a>
+                    <a href="https://webcert.cnslt.net/cert/grade?srf=3af21034f35011eab3e00163e006e8e" target="_blank">
+                        <img src="images/400.png" alt="用户承诺 购机无忧">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="slogan">让全球每个人都能享受科技带来的美好生活</div>
+    </div>
+</div>
+<div class="exergue"></div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js.js"></script>
 </body>
 </html>
 
-</body>
-</html>
+
+
+
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+overflow-x: hidden;
+}
+
+.mi-nav {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+height: 65px;
+padding: 0 15px;
+background: transparent; /* 初始透明 */
+transition: background 0.3s ease;
+z-index: 1000;
+
+.mi-nav-list {
+display: flex;
+justify-content: space-between;
+align-items: center;
+max-width: 1440px;
+margin: 0 auto;
+width: 100%;
+height: 100%;
+.mi-logo {
+display: flex;
+align-items: center;
+width: 60px;
+height: 65px;
+
+.mi-logo-t {
+width: 34px;
+height: 34px;
+
+img {
+width: 34px;
+height: 34px;
+}
+}
+}
+.nav-menu {
+display: flex;
+/*主轴（横着的那一条线）*/
+justify-content:  space-between;
+/*侧轴*/
+align-items: center;
+width: 889px;
+height: 100%;
+color: white;
+.nav-item{
+a{
+/*去除下划线*/
+text-decoration: none;
+/*颜色过渡*/
+transition: background-color 0.3s ease;
+color: #fff;
+font-size:14px;
+font-weight: 500;
+&:hover {
+color: #ff6900;  // 小米橙
+}
+}
+}
+}
+.login-area {
+width: 110px;
+height: 100%;
+display: flex;
+align-items: center;
+margin-left: 13px;
+
+.menu-item {
+display: flex;
+align-items: center;
+font-size:14px;
+font-weight: 500;
+a {
+display: flex;
+align-items: center;
+text-decoration: none;
+color: #fff;
+white-space: nowrap;//禁止换行
+transition: background-color 0.3s ease;
+&:hover {
+color: #ff6900;  // 小米橙
+}
+}
+span {
+color: #fff;
+font-size: 14px;
+margin: 0 25px;
+}
+}
+}
+}
+}
+/* 页面主体 */
+.content {
+/* 顶部轮播模块（页面模块容器）轮播可视区域（窗口） */
+/*通用模块样式 section*/
+.section.section-banner {
+width: 100%;
+height: 787px;
+/*给里面的 absolute 元素（按钮）一个定位参考点*/
+position: relative;
+/*防止溢出*/
+overflow: hidden;
+
+/* 轮播容器（规定轮播区域大小） */
+.swiper.banner-swiper {
+width: 100%;
+height: 100%;
+
+/* 滑动轨道 */
+.swiper-wrapper {
+width: 100%;
+height: 100%;
+display: flex;
+/*要求横向排列 而默认是display: block;竖着*/
+
+/* 单张轮播 */
+.swiper-slide {
+width: 100%;
+height: 100%;
+flex-shrink: 0;
+
+/*每一张都坚持自己 100% 宽度，不允许被压。*/
+
+img {
+width: 101%;
+height: 100%;
+object-fit: cover;   /* 关键：铺满不变形 */
+display: block; /*消除图片底部缝隙*/
+}
+}
+
+}
+
+/* 左右箭头 */
+.swiper-button-prev,
+.swiper-button-next {
+
+color: #fff;
+
+&:hover {
+color: #ff6900;  // 小米橙
+}
+
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+font-size: 23px !important;
+font-weight: 999;
+}
+
+.swiper-pagination {
+position: absolute;
+bottom: 50px;
+left: 50%;
+transform: translateX(-50%);
+width: 480px;
+max-width: 85%;
+
+display: flex;
+}
+
+/* 每一段 */
+.swiper-pagination-bullet {
+flex: 1;
+height: 2px;
+background: rgba(255,255,255,0.3);
+border-radius: 0;
+margin: 0 !important;
+opacity: 1;
+}
+
+/* 当前那一段 */
+.swiper-pagination-bullet-active {
+background: #ff6700;
+}
+}
+}
+.photo{
+width: 100%;
+height: 787px;
+overflow: hidden;
+img {
+width: 101%;
+height: 100%;
+object-fit: cover;   /* 关键：铺满不变形 */
+display: block; /*消除图片底部缝隙*/
+}
+}
+.divider {
+width: 100%;
+height: 13px;
+background: #fff;
+}
+}
+.footer-container{
+display: block;
+width: 100%;
+height: 600px;
+margin-top:2.0625rem;
+.footer{
+width: 1226px;
+height: 350px;
+margin: 8px auto;  /* 水平居中 */
+padding: 40px 0;
+.footer-nav{
+display: flex;
+.link-list{
+width: 160px;
+height: 270px;
+.title{
+width: 160px;
+height: 17px;
+margin-bottom: 26px;
+font-size: 14px;
+color: #424242;
+}
+}
+.footer-info{
+flex-grow: 1;
+.footer-info-item1{
+display: block;
+text-align: center;
+border-left: 1px solid  rgb(224,224,224); /* 添加白色分隔线 */
+.phone{
+color: #ff6900;
+font-size: 22px;
+line-height: 22px;
+margin: 0 0 5px 0;
+}
+.service-time{
+color: #616161;
+font-size: 12px;
+margin: 0 0 5px 0;
+}
+}
+.phone1{
+color: #ff6900;
+font-size: 22px;
+line-height: 22px;
+text-align: center;
+margin: 25px 0 5px 0;
+}
+.footer-info-item3{
+margin-left: 100px;
+.working-hours{
+color: #757575;
+font-size: 12px;
+margin-top: 5px;
+}
+.device-info{
+color: #616161;
+font-size: 12px;
+text-align: left;
+margin: 3px 0 5px;
+}
+}
+.footer-info-item4{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.btn {
+width: 119px;
+height: 29px;
+border-color: #f25807;       /* 设置按钮边框颜色 */
+border-style: solid;         /* 设置边框样式为实线 */
+border-width: 1px;
+background-color: #fff;   /* 设置按钮背景色 */
+color:  #f25807;                 /* 设置文字颜色为白色 */
+display: inline-block;       /* 使按钮成为内联块级元素 */
+font-size: 12px;             /* 设置字体大小为 12px */
+line-height: 8px;           /* 设置行高为 28px，确保按钮内文字垂直居中 */
+text-align: center;          /* 设置文字居中对齐 */
+padding: 8px 20px;           /* 设置按钮内边距，确保按钮内容不至于紧贴按钮边缘 */
+border-radius: 5px;          /* 设置按钮的圆角 */
+text-decoration: none;       /* 去除链接的下划线 */
+transition: background-color 0.3s ease; /* 设置背景色的过渡效果 */
+}
+.btn:hover {
+color:  #fff;
+background-color: #f25807;   /* 悬停时按钮背景色变暗 */
+}
+
+}
+}
+
+}
+.footer-bottom{
+flex-grow: 1;
+background: #fafafa;
+margin: 30px 0;
+display: block;
+.wrapper{
+width: 1226px;
+height: 175px;
+display: flex;
+margin: 0 233px;
+/*margin:auto;*/
+.logo{
+width: 80px;
+height: 190px;
+img{
+background-size: 56px 56px; /* 设置背景图片的尺寸 */
+width: 56px; /* 设置宽度 */
+height: 56px; /* 设置高度 */
+font-size: 12px; /* 设置字体大小 */
+line-height: 14px; /* 设置行高 */
+margin: 0  20px 0  0; /* 设置外边距，顶部为0，右边为20px，底部为0，左边为0 */
+text-align: left; /* 设置文本对齐方式为左对齐 */
+}
+}
+.footer-nav{
+flex-grow: 1;
+display: block;
+.info-text{
+.sites{
+a{
+color: #757575;
+text-decoration: none;
+font-size: 12px;
+line-height: 18px;
+}
+.sep{
+color: #b0b0b0;
+font-size: 12px;
+line-height: 18px;
+}
+}
+.footer-info{
+span{
+color: #b0b0b0;
+font-size: 12px;
+line-height: 18px;
+}
+
+}
+}
+.info-links{
+flex-grow: 1;
+margin-top: 4px;
+margin-bottom: 15px;
+display: flex;
+a{
+width: 90px;
+height: 30px;
+img{
+width: 90px;
+height: 30px;
+}
+}
+
+}
+}
+}
+.slogan{
+flex-grow: 1;
+font-size: 20px;
+line-height: 14px;
+text-align: center;
+margin-top: 30px;
+color: #b0b0b0;
+}
+}
+ul {
+font-size: 12px;
+list-style-type: none; /* 去掉默认的点符号 */
+li {
+color: #757575;
+line-height: 14px;
+margin-top: 10px;
+}
+li:hover {
+color: #ff6900;
+cursor: pointer;
+}
+}
+}
+.exergue{
+width: 100%;
+height: 35px;
+background: #fafafa;
+}
+/* 滚动条样式 */
+/*滑动条宽度*/
+::-webkit-scrollbar {
+width: 13px;
+}
+/*轨道背景*/
+::-webkit-scrollbar-track {
+background: #2b2b2b;
+}
+/*滑块颜色 滑块圆角*/
+::-webkit-scrollbar-thumb {
+background:#bfbfbf;
+border-radius: 8px;
+border: 3px solid #2b2b2b;  /* 关键：制造“细滑块”效果 */
+}
+/*鼠标点击亮度变化*/
+::-webkit-scrollbar-thumb:hover {
+background: #d6d6d6;
+}
+
+/*滚动后加背景色*/
+.mi-nav.scrolled {
+background: #2b2b2b;
+}
+
+
+
+
+
+
+
+
+

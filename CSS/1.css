@@ -272,18 +272,18 @@ body {
                 .btn {
                     width: 119px;
                     height: 29px;
-                    border-color: #f25807;       /* 设置按钮边框颜色 */
-                    border-style: solid;         /* 设置边框样式为实线 */
+                    border-color: #f25807;
+                    border-style: solid;
                     border-width: 1px;
-                    background-color: #fff;   /* 设置按钮背景色 */
-                    color:  #f25807;                 /* 设置文字颜色为白色 */
-                    display: inline-block;       /* 使按钮成为内联块级元素 */
-                    font-size: 12px;             /* 设置字体大小为 12px */
-                    line-height: 8px;           /* 设置行高为 28px，确保按钮内文字垂直居中 */
-                    text-align: center;          /* 设置文字居中对齐 */
-                    padding: 8px 20px;           /* 设置按钮内边距，确保按钮内容不至于紧贴按钮边缘 */
-                    border-radius: 5px;          /* 设置按钮的圆角 */
-                    text-decoration: none;       /* 去除链接的下划线 */
+                    background-color: #fff;
+                    color:  #f25807;
+                    display: inline-block;
+                    font-size: 12px;
+                    line-height: 8px;
+                    text-align: center;
+                    padding: 8px 20px;
+                    border-radius: 5px;
+                    text-decoration: none;
                     transition: background-color 0.3s ease; /* 设置背景色的过渡效果 */
                 }
                 .btn:hover {
@@ -310,13 +310,13 @@ body {
                 width: 80px;
                 height: 190px;
                 img{
-                    background-size: 56px 56px; /* 设置背景图片的尺寸 */
-                    width: 56px; /* 设置宽度 */
-                    height: 56px; /* 设置高度 */
-                    font-size: 12px; /* 设置字体大小 */
-                    line-height: 14px; /* 设置行高 */
-                    margin: 0  20px 0  0; /* 设置外边距，顶部为0，右边为20px，底部为0，左边为0 */
-                    text-align: left; /* 设置文本对齐方式为左对齐 */
+                    background-size: 56px 56px;
+                    width: 56px;
+                    height: 56px;
+                    font-size: 12px;
+                    line-height: 14px;
+                    margin: 0  20px 0  0;
+                    text-align: left;
                 }
             }
             .footer-nav{
@@ -391,7 +391,7 @@ body {
     background: #fafafa;
 }
 /* 滚动条样式 */
-/*滑动条宽度*/
+/*宽度*/
 ::-webkit-scrollbar {
     width: 13px;
 }
@@ -399,11 +399,11 @@ body {
 ::-webkit-scrollbar-track {
     background: #2b2b2b;
 }
-/*滑块颜色 滑块圆角*/
+/*颜色 圆角*/
 ::-webkit-scrollbar-thumb {
     background:#bfbfbf;
     border-radius: 8px;
-    border: 3px solid #2b2b2b;  /* 关键：制造“细滑块”效果 */
+    border: 3px solid #2b2b2b;
 }
 /*鼠标点击亮度变化*/
 ::-webkit-scrollbar-thumb:hover {
@@ -412,9 +412,96 @@ body {
 
 /*滚动后加背景色*/
 .mi-nav.scrolled {
-    background: #2B2B2B;
+    background: #2b2b2b;
 }
 
+
+/*响应式*/
+
+@media (max-width: 768px) {
+    /* 导航栏 */
+    .mi-nav .mi-nav-list .nav-menu {
+        display: none;
+    }
+    .mi-nav .mi-nav-list .login-area {
+        margin-left: auto;
+    }
+
+    /* 轮播图高度 */
+    .content .section.section-banner {
+        height: 220px;
+    }
+    .content .photo {
+        height: 220px;
+    }
+
+    /* 箭头缩小 */
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        font-size: 14px !important;
+    }
+
+    /* 进度条 */
+    .content .section.section-banner .swiper.banner-swiper .swiper-pagination {
+        bottom: 12px;
+        width: 180px;
+    }
+
+    /* Footer 整体高度自适应 */
+    .footer-container {
+        height: auto;
+    }
+
+    /* 上半部部分 */
+    .footer-container .footer {
+        width: 100%;
+        height: auto;
+        padding: 20px 16px;
+    }
+    .footer-container .footer .footer-nav {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    .footer-container .footer .footer-nav .link-list {
+        width: calc(50% - 10px);
+        height: auto;
+    }
+    /* 第一个空白占位隐藏 */
+    .footer-container .footer .footer-nav .link-list:first-child {
+        display: none;
+    }
+    .footer-container .footer .footer-nav .footer-info {
+        width: 100%;
+    }
+    .footer-container .footer .footer-nav .footer-info .footer-info-item1 {
+        border-left: none;
+        border-top: 1px solid rgb(224,224,224);
+        padding-top: 16px;
+    }
+    .footer-container .footer .footer-nav .footer-info .footer-info-item3 {
+        margin-left: 0;
+    }
+
+    /* 下半部分 */
+    .footer-container .footer-bottom .wrapper {
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+        padding: 16px;
+        height: auto;
+    }
+    .footer-container .footer-bottom .wrapper .logo {
+        width: auto;
+        height: auto;
+    }
+    .footer-container .footer-bottom .wrapper .footer-nav .info-links {
+        flex-wrap: wrap;
+    }
+    .footer-container .footer-bottom .slogan {
+        font-size: 13px;
+        padding-bottom: 16px;
+    }
+}
 
 
 
