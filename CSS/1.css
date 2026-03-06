@@ -201,6 +201,58 @@ body {
         height: 13px;
         background: #fff;
     }
+
+    .new{
+        width: 100%;
+        height: 787px;
+        overflow: hidden;
+        text-align: center;
+        background-position: center;
+        background-size: cover;
+        /*background-image: url("images/1-new.jpg");*
+        路径问题  如果图片不显示 就直接加../
+         */
+        display: flex;
+        flex-direction: column;
+        background-image: url("../images/1-new.jpg");
+        .title{
+            align-items: center;
+            .text1{
+                font-size: 35px;
+                margin-bottom: 10px;
+                color: #fff;
+            }
+            .text2{
+                color: #fff;
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+
+        }
+        .title1{
+            .text3{
+                color: #fff;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 29px;
+                text-align: center;
+            }
+            margin-bottom: 290px;
+        }
+
+        .btn-list{
+            .solid-btn{
+                width: 256px;
+                height: 40px;
+                font-size: 14px;
+                color: #12151a;
+                border-radius: 8px;
+                background-color: #c8c1c1;
+                font-weight: 340;
+                border: none;
+            }
+        }
+    }
 }
 .footer-container{
     display: block;
@@ -390,6 +442,9 @@ body {
     height: 35px;
     background: #fafafa;
 }
+
+
+
 /* 滚动条样式 */
 /*宽度*/
 ::-webkit-scrollbar {
@@ -434,6 +489,7 @@ body {
     .content .photo {
         height: 220px;
     }
+
 
     /* 箭头缩小 */
     .swiper-button-prev::after,
@@ -501,6 +557,41 @@ body {
         font-size: 13px;
         padding-bottom: 16px;
     }
+    /* --- new 模块：极简图文分离版 --- */
+    .content .new {
+        height: 220px; /* 留出足够高度展示车图 */
+
+    }
+
+    /* 直接隐藏中间的所有描述小字 */
+    .content .new .title1 {
+        display: none;
+    }
+
+    /* 主副标题适当缩小 */
+    .content .new .title .text1 { font-size: 14px; }
+    .content .new .title .text2 {
+        font-size: 7px;
+        margin-bottom: 90px;
+    }
+
+    /* 按钮改为上下排列，并推至底部 */
+    .content .new .btn-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        .solid-btn{
+            border-radius: 5px;
+            width: 80px;
+            height: 20px;
+        }
+
+
+
+    }
+
+
 }
 
 
